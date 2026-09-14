@@ -1,0 +1,46 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Rollcage Stage II",
+    "id": "SLUS-00867",
+    "boot_exe": "SLUS_008.67"
+  },
+  "marketing": {
+    "description": "",
+    "publisher": "",
+    "year": "",
+    "region": "USA",
+    "players": 2
+  },
+  "rom_identity": {
+    "cue_name": "Rollcage Stage II (USA).cue",
+    "bin_name": "Rollcage Stage II (USA) (Track 01).bin",
+    "track_counts": [
+      13
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 189747600,
+      "md5": "c502fc992a02a593f4a0a67ece6f2ef3",
+      "sha1": "a710c5fab77cbbfe2a5d3678913cf968aee224f9",
+      "crc32": "d8c95e56"
+    },
+    "disc_fp": "76a1510e08b7648972adddbcaed89945e71ddb0fc2e8d1db8798f0104685e358"
+  },
+  "exe": {
+    "load_address": "0x8001C000",
+    "entry_pc": "0x80020710",
+    "text_size": "0x00006000",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 72,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
